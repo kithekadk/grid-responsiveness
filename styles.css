@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Outfit:wght@400;500;600;700&family=Rubik:wght@300&display=swap');
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    color: white;
+}
+
+body{
+    background-color:hsl(226, 43%, 10%);
+}
+.body-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "menu1 work play study "
+                        "menu1 exercise social selfcare";
+     
+    height: 100%;
+    width: 100%;
+    padding:50px;
+    gap:15px;
+    /* background-color: yellow; */
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.menu {
+    background-color: hsl(235, 46%, 20%);
+    padding: 10px;
+    border-radius: 12px;
+    margin:10px;
+}
+
+.profile {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 15px;
+    padding: 10px;
+}
+.overal{
+    background-color: hsl(235, 46%, 20%);
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.work
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.workhrs{
+    background-color: hsl(15, 100%, 70%);
+    grid-area: work;
+    text-align: end;
+    border-radius: 12px;
+} 
+
+h2{
+    font-size: 50px;
+    text-align: left;
+}
+.menu {
+    grid-area: menu1;
+    padding: 0px;
+    margin: 0px;
+}
+
+.playhrs {
+    grid-area: play;
+    text-align: end;
+    border-radius: 12px;
+    background-color: hsl(195, 74%, 62%);
+    
+    
+}
+.studyhrs{
+    grid-area: study;
+    background-color: hsl(348, 100%, 68%);
+    text-align: end;
+    border-radius: 12px;
+}
+.exercisehrs {
+    grid-area: exercise;
+    background-color: hsl(145, 58%, 55%);
+    text-align: end;
+    border-radius: 12px;
+}
+.socialhrs{
+    grid-area: social;
+    background-color: hsl(264, 64%, 52%);
+    text-align: end;
+    border-radius: 12px;
+}
+.selfcarehrs {
+    grid-area: selfcare;
+    background-color:  hsl(36, 52%, 42%);
+    text-align: end;
+    border-radius: 12px;
+}
+.playhrs img,
+.workhrs img,
+.studyhrs img,
+.exercisehrs img,
+.socialhrs img,
+.selfcarehrs img{
+    width: 50px;
+    height: 50px;
+}
+#profilepic{
+    width: 100px;
+    height: 100px;
+    padding:35px;
+}
+p, h1, h3 {
+    padding-left: 35px;
+}
+h3{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+@media screen and (max-width:675px) {
+    body{
+        width: 100%;
+    }
+    .body-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    }
+    .menu,
+    .playhrs,
+    .workhrs,
+    .studyhrs,
+    .exercisehrs,
+    .socialhrs,
+    .selfcarehrs {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .work2 h2{
+        font-size: 30px;
+        text-align: center;
+    }
+}
